@@ -1,4 +1,4 @@
-namespace OCP.Quiz;
+namespace OCP.Questions;
 
 public class MultipleChoiceQuestion : Question
 {

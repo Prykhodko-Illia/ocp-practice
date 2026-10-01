@@ -1,10 +1,10 @@
-namespace OCP.Quiz;
+namespace OCP.Questions;
 
 public abstract class Question
 {
     string Prompt;
 
-    public Question(string prompt)
+    protected Question(string prompt)
     {
         Prompt = prompt;
     }
