@@ -1,0 +1,28 @@
+using OCP.Questions;
+
+namespace OCP.Quiz;
+
+public class QuizExercise
+{
+    public void Run()
+    {
+        Console.WriteLine("QUIZ EXERCISE");
+        Question[] questions = new Question[]
+        {
+            new TextQuestion(
+                "What is the capital of France?",
+                "Paris"),
+
+            new MultipleChoiceQuestion(
+                "Which number is prime?",
+                new[] { "4", "7", "9" },
+                "2"),
+
+            new TextQuestion(
+                "Which C# keyword creates a new object?",
+                "new")
+        };
+
+        new QuizRunner().Run(questions);
+    }
+}
